@@ -3,7 +3,10 @@ layout: default
 ---
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<!--<header id="head-bkg" class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')"> -->
+
+<header id="head-bkg" class="intro-header">
+
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -16,6 +19,7 @@ layout: default
         </div>
     </div>
 </header>
+
 
 <!-- Main Content -->
 <div class="container">
@@ -197,3 +201,15 @@ layout: default
         {% endif %}
 	</div>
 </div>
+
+<script type="text/javascript">
+    var i = 0;
+    var imgs = ['/img/in-post/master-three-years/1.jpg','/img/home-bg.jpg','/img/post-bg-2015.jpg'];
+    function showBkg(){
+        var slides = document.getElementById("head-bkg");
+        slides.style.backgroundImage="url('"+imgs[i]+"')";
+        i=(i+1)%imgs.length;
+        setTimeout(showBkg, 15000);
+    }   
+    showBkg();
+</script>
