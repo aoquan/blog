@@ -1,0 +1,15 @@
+---
+layout:       post
+title:        "研究生这三年"
+subtitle:     "离校前的矫情"
+date:         2018-01-31 12:00:00
+author:       "Aowen"
+header-img:   "img/in-post/master-three-years/1.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - 校园
+    - 随笔
+---
+hahaha
