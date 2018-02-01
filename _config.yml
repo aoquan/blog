@@ -95,3 +95,5 @@ friends: [
         href: "http://lxr.free-electrons.com"
     }
 ]
+
+theme: jekyll-theme-cayman
